@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<link>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link rel="stylesheet" href="css/bootstrap.css"></link>
+<style>
+	#frm{
+		width: 500px;
+		margin:auto;
+		margin-top: 100px;
+	}
+</style>
+</head>
+<body class="container-fluid" >
+<form action="register" method="post" class=" form" id="frm"> 
+	<h class="bg-danger">Registration form</h>
+	<table>
+		<tr>
+			<td>Name</td>
+			<td><input type = "text" name="userName" required</td>
+		</tr>
+		<tr>
+			<td>Email</td>
+			<td><input type = "email" name="userEmail" required</td>
+		</tr>
+		<tr>
+			<td>Mobile</td>
+			<td><input type = "text" name="userMobile" required</td>
+		</tr>
+		<tr>
+			<td>Dob</td>
+			<td><input type = "date" name="userDob" required</td>
+		</tr>
+		<tr>
+			
+		
+				<td>City</td>
+				<td><select name="city">
+				<option value="pune ">Pune </option>
+				<option value="banglore ">Banglore </option>
+				<option value="mumbai ">Mumbai </option>
+				<option value="indore ">Indore </option>
+				</select></td>
+			</td>
+		</tr>
+		<tr>
+			<td>Gender</td>
+			<td>
+				<input type="radio" name="gender" value="male">Male &nbsp;
+				<input type="radio" name="gender" value="female">Female
+			</td>
+		</tr>
+		<tr>
+			<td><button type="submit">Register</button></td>
+			<td><button type="reset">Cancle</button></td>
+		</tr>
+	</table>
+	<button class="btn btn-outline-success d-block"><a href="showData">Show Users</a></button>
+</form>
+	
+</body>
+</html>
